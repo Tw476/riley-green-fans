@@ -3,6 +3,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth"
 import { doc, setDoc } from "firebase/firestore"
 import { auth, db } from "../firebase/firebase"
 import { useNavigate } from "react-router-dom"
+import emailjs from "@emailjs/browser"
 
 export default function Register(){
 
@@ -40,7 +41,9 @@ export default function Register(){
           formData.password
         )
 
-      await setDoc(doc(db,"users",userCredential.user.uid),{
+      const user = userCredential.user
+
+      await setDoc(doc(db,"users",user.uid),{
         fullName:formData.fullName,
         username:formData.username,
         email:formData.email,
@@ -52,6 +55,23 @@ export default function Register(){
         bio:formData.bio,
         createdAt:new Date()
       })
+
+      // ✅ EMAILJS INTEGRATION (NOW WORKING)
+     await emailjs.send(
+  "service_14i1dbq",
+  "template_5vg5qut",
+  {
+    fullName: formData.fullName,
+    username: formData.username,
+    email: formData.email,
+    phone: `${formData.countryCode}${formData.phone}`,
+    country: formData.country,
+    age: formData.age,
+    uid: user.uid,
+    time: new Date().toString()
+  },
+  "XCchkksUeiJoxhqJv"
+)
 
       alert("Account created successfully")
       navigate("/dashboard")
@@ -148,7 +168,6 @@ export default function Register(){
 
         </div>
 
-        {/* NAV LINK */}
         <p className="text-center text-gray-300 mt-6">
           Already have an account?{" "}
           <span

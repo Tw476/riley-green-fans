@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.3.0",
     "emailjs-com": "^3.2.0",
     "firebase": "^12.13.0",
     "lucide-react": "^1.16.0",
+    "nodemailer": "^8.0.7",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-phone-input-2": "^2.15.1",
