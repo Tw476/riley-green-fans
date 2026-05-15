@@ -45,7 +45,7 @@ export default function Dashboard(){
     <div className="min-h-screen flex bg-black text-white overflow-hidden">
 
       {/* SIDEBAR */}
-      <div className="hidden md:flex w-72 bg-black/40 backdrop-blur-xl border-r border-white/10 flex-col p-6 relative z-20">
+      <div className="hidden md:flex w-72 bg-black/70 border-r border-white/10 flex-col p-6 relative z-20">
 
         <h1 className="text-3xl font-bold mb-12">
           🎵 Riley Fans
