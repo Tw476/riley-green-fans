@@ -182,7 +182,7 @@ export default function Dashboard(){
           {/* STATS */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-            <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8">
+            <div className="bg-white/10  border border-white/10 rounded-3xl p-8">
 
               <p className="text-gray-400 text-sm uppercase">
                 Community
@@ -194,7 +194,7 @@ export default function Dashboard(){
 
             </div>
 
-            <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8">
+            <div className="bg-white/10  border border-white/10 rounded-3xl p-8">
 
               <p className="text-gray-400 text-sm uppercase">
                 Status
@@ -206,7 +206,7 @@ export default function Dashboard(){
 
             </div>
 
-            <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8">
+            <div className="bg-white/10  border border-white/10 rounded-3xl p-8">
 
               <p className="text-gray-400 text-sm uppercase">
                 Account
@@ -221,7 +221,7 @@ export default function Dashboard(){
           </div>
 
           {/* INFO CARD */}
-          <div className="mt-8 bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8">
+          <div className="mt-8 bg-white/10  border border-white/10 rounded-3xl p-8">
 
             <h2 className="text-2xl font-bold mb-6">
               Account Information
