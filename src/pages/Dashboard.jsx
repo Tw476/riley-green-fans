@@ -132,8 +132,7 @@ export default function Dashboard(){
         <div className="relative z-10 p-6 md:p-10">
 
           {/* HERO */}
-          <div className="bg-white/10 border border-white/10 backdrop-blur-xl rounded-[40px] p-8 md:p-12 overflow-hidden relative mb-8">
-
+         <div className="bg-black/60 border border-white/10 rounded-[40px] p-8 md:p-12">
             <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
 
             <div className="relative z-10">
